@@ -12,7 +12,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtract(self): # 3 assertions
         self.assertEqual(sub(5,3), 2)
-        self.assertEqual(sub(-5,2), -3)
+        self.assertEqual(sub(-5,-2), -3)
         self.assertEqual(sub(5,0), 5)
 
     ######## Partner 1
