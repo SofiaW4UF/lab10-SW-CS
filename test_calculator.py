@@ -1,3 +1,7 @@
+#https://github.com/SofiaW4UF/lab10-SW-CS
+#Partner 1: Sofia Wangensteen
+#Partner 2: Chris Steele
+
 import unittest
 from calculator import *
 
@@ -16,12 +20,18 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(5,0), 5)
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
+    def test_multiply(self): # 3 assertions
     #     fill in code
+        self.assertEqual(mul(2, 2), 4)
+        self.assertEqual(mul(3, 7), 21)
+        self.assertEqual(mul(5, 9), 45)
 
-    # def test_divide(self): # 3 assertions
+    def test_divide(self): # 3 assertions
     #     fill in code
     # ##########################
+        self.assertEqual(div(16, 16), 1)
+        self.assertEqual(div(16, 4), 4)
+        self.assertEqual(div(9, 3), 3)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -36,22 +46,29 @@ class TestCalculator(unittest.TestCase):
         self.assertRaises(log(0,0),ValueError)
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
     #     fill in code
+        self.assertRaise(log(0, 5), ValueError)
 
-    # def test_hypotenuse(self): # 3 assertions
+    def test_hypotenuse(self): # 3 assertions
     #     fill in code
+        self.assertEqual(hypotenuse(4, 3), 5)
+        self.assertEqual(hypotenuse(8, 6), 10)
+        self.assertEqual(hypotenuse(16, 12), 20)
 
-    # def test_sqrt(self): # 3 assertions
+    def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #    square_root(NUM)
     #     # Test basic function
     #     fill in code
     ##########################
+        self.assertRaises(square_root(-1), ValueError)
+        self.assertEqual(square_root(4), 4)
+        self.assertEqual(square_root(16), 4)
 
 # Do not touch this
 if __name__ == "__main__":

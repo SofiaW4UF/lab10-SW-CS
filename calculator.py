@@ -1,3 +1,7 @@
+#https://github.com/SofiaW4UF/lab10-SW-CS
+#Partner 1: Sofia Wangensteen
+#Partner 2: Chris Steele
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
