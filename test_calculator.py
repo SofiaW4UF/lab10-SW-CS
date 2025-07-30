@@ -30,8 +30,8 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     # ##########################
         self.assertEqual(div(16, 16), 1)
-        self.assertEqual(div(16, 4), 4)
-        self.assertEqual(div(9, 3), 3)
+        self.assertEqual(div(4, 16), 4)
+        self.assertEqual(div(3, 9), 3)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -55,9 +55,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
     #     fill in code
-        self.assertEqual(hypotenuse(4, 3), 5)
-        self.assertEqual(hypotenuse(8, 6), 10)
-        self.assertEqual(hypotenuse(16, 12), 20)
+        self.assertEqual(hypotenuse(4, 3), 5.0)
+        self.assertEqual(hypotenuse(8, 6), 10.0)
+        self.assertEqual(hypotenuse(16, 12), 20.0)
 
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
